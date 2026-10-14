@@ -1,0 +1,253 @@
+---
+format: 
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 4
+editor: visual
+---
+
+# MGEM
+
+------------------------------------------------------------------------
+
+## Capstone - Post-Fire Spectral Recovery in Northern Manitoba
+
+**University of British Columbia, MGEM Capstone** ([doi link](https://doi.org/10.5683/SP3/MO1W5K))
+
+This capstone examined vegetation recovery following a 2013 wildfire complex that burned about 168,837 hectares in the Boreal Shield of northern Manitoba, near Gillam and nearby First Nations and Northern Affairs communities. Using Landsat surface reflectance imagery from 2010 to 2023, I looked at how burn severity and pre-fire land cover influenced recovery patterns over the first decade after the fire.
+
+**What I did**
+
+-   Built annual vegetation index time series from Landsat imagery
+-   Mapped burn severity using a pre-fire and post-fire satellite comparison
+-   Calculated recovery rate and estimated years to recovery
+-   Compared recovery across burn severity classes and pre-fire land-cover types
+-   Created maps, graphs, and summary figures to communicate the results
+
+[**VIEW R CODE AND PROJECT CONTENT**](capstone_recovery.html)\
+[**VIEW PAPER**](files/Kopitz_Wildfire_Recovery_Final_Paper.pdf)
+
+------------------------------------------------------------------------
+
+## Logging Change Proposal
+
+**Duck Mountain, Manitoba**
+
+This was a two page proposal completed in a landscape ecology and management course. I outlined a landscape question and analysis plan and chose to use landscape metrics to describe how patterns could be measured.
+
+The proposal examines how industrial logging patterns have changed over time in Forest Management License 3 (Duck Mountain, Manitoba) using Landsat based disturbance data *([NTEMS](https://doi.org/10.1080/17538947.2016.1187673))*.
+
+**What I proposed**
+
+-   Use NTEMS harvest disturbance data (1994–2022)
+-   Reclass harvest-year layers into logged / not logged maps
+-   Apply landscape metrics (PLAND, NP, AREA_MN/SD, CLUMPY)
+-   Evaluate changes in patch number, patch size, and clustering
+-   Interpret implications for landscape pattern and forest management
+
+[**VIEW PROPOSAL**](files/KopitzS_GEM500FinalProposal_Dec62025.pdf)
+
+------------------------------------------------------------------------
+
+## LiDAR Forest Modeling
+
+**Alex Fraser Research Forest, British Columbia**
+
+This project focused on developing a suite of forest structural products from airborne LiDAR data. The goal was to move from raw point cloud data to forest metrics and mapped predictions across the study area.
+
+**What I did**
+
+-   Built a digital elevation model (DEM) and canopy height model (CHM) mosaic from LiDAR data
+-   Modeled dominant height and above-ground biomass (AGB) using LiDAR metrics
+-   Applied the models wall-to-wall to produce continuous prediction surfaces across the study area
+
+[**VIEW R CODE**](GEM521_Lab3_SK_eportfolio.html)
+
+------------------------------------------------------------------------
+
+## Individual Tree Segmentation
+
+**Malcolm Knapp Research Forest, British Columbia**
+
+This project focused on detecting and segmenting individual trees from LiDAR data using two different approaches.
+
+**What I did**
+
+-   Prepared and normalized LiDAR data for tree-level analysis
+-   Segmented trees using [*Li et al. (2012)*](https://doi.org/10.14358/PERS.78.1.75) point-cloud method and [*Dalponte & Coomes (2016)*](https://doi.org/10.1111/2041-210X.12575) Canopy Height Model(CHM) - based method
+
+[**VIEW R CODE**](GEM521_Lab4_SK.html)
+
+<figure style="text-align:center;">
+  <iframe src="lidar_rgl.html"
+          width="550"
+          height="400"
+          style="border:0; display:block; margin:0 auto;"
+          scrolling="no">
+  </iframe>
+  <figcaption style="margin-top:10px;">
+    3D visualization of Dalponte (2016) individual tree segmentation at 0.5 m CHM resolution.
+  </figcaption>
+</figure>
+
+------------------------------------------------------------------------
+
+## Stream & Riparian Analysis
+
+**Nahmint Watershed, British Columbia**
+
+This project focused on defining Riparian Management Areas (RMAs) within a topographically complex watershed using a Digital Elevation Model (DEM) and hydrological tools.
+
+**What I did**
+
+-   Processed a DEM to remove sinks and model flow direction and accumulation\
+-   Extracted and classified stream networks using Strahler and Shreve ordering\
+-   Calculated stream gradient and width to determine fish-bearing potential\
+-   Assigned stream classes and applied reserve and management zone buffers using python field calculations\
+-   Delineated watersheds and generated contour lines\
+-   Produced a final map summarizing riparian management areas, stream networks, and terrain
+
+[**VIEW FINAL MAP**](images/GEM511_Lab3_Map_SK.png)
+
+------------------------------------------------------------------------
+
+## Forest Cutblock Analysis - Python
+
+**Central British Columbia**
+
+This team based final project for a Python course focused on analyzing forest harvest cutblocks using spatial data processing and visualization techniques. The objective was to explore temporal and spatial harvest patterns and document the workflow in a reproducible notebook format.
+
+**What we did**
+
+-   Prepared and cleaned spatial datasets\
+-   Analyzed harvest patterns over time\
+-   Produced maps and summary visualizations\
+-   Organized and documented the final notebook workflow
+
+[**VIEW NOTEBOOK**](ALangWong_GKulkarni_SKopitz_Cutblocks.html)
+
+------------------------------------------------------------------------
+
+# Coding
+
+A few short coding examples are shown below. More complete workflows are linked within the project sections above.
+
+::::: panel-tabset
+## Severity
+
+Example workflow used in the capstone project to classify burn severity from a dNBR raster.
+
+::: {.panel-tabset group="language"}
+### R
+
+``` r
+# load the terra package (used for raster data)
+library(terra)
+
+# load dNBR raster - creates a SpatRaster object
+dnbr <- rast("dnbr.tif")
+
+# reclassification matrix
+reclass <- matrix(c(
+  -Inf, 0.1, 1,    # values less than or equal to 0.10 get class 1
+  0.1, 0.27, 2,    # values >0.10 and <=0.27 get class 2
+  0.27, 0.44, 3,   # values >0.27 and <=0.44 get class 3
+  0.44, Inf, 4),   # values >0.44 get class 4
+  ncol = 3, byrow = TRUE)   # three columns: from, to, class
+
+# apply the reclassification
+severity <- classify(dnbr, reclass)
+```
+
+### Python
+
+``` python
+# import NumPy (used for numerical array operations)
+import numpy as np
+
+# create an output array called 'severity'
+# with same shape as dnbr, with all values initialized to 0
+severity = np.zeros_like(dnbr)
+
+# reclassify continuous dNBR values into discrete severity classes
+severity[(dnbr <= 0.1)] = 1
+severity[(dnbr > 0.1) & (dnbr <= 0.27)] = 2
+severity[(dnbr > 0.27) & (dnbr <= 0.44)] = 3
+severity[(dnbr > 0.44)] = 4
+
+# after this 'severity' is a classified raster array
+```
+:::
+
+------------------------------------------------------------------------
+
+## Change Detection (BFAST)
+
+Example of converting NDVI values to a time series object and applying BFAST to detect structural breaks in vegetation dynamics.
+
+::: {.panel-tabset group="language"}
+### R
+
+``` r
+# load the bfast package (used for time-series change detection)
+library(bfast)
+
+# convert NDVI values into a time series object
+ndvi_ts <- ts(ndvi_values,  # vector of NDVI values in date order
+              frequency = 23,  # observations per year (16-day product)
+              start = c(2001, 1)) # starting year
+
+# run BFAST monitoring to detect structural breaks
+bfm <- bfastmonitor(ndvi_ts,
+                    start = c(2008, 1)) # begin monitoring 1st observation in 2008
+
+# extract the estimated breakpoint year
+bfm$breakpoint
+```
+:::
+:::::
+
+------------------------------------------------------------------------
+
+# Other (pre-MGEM!)
+
+------------------------------------------------------------------------
+
+## NSERC USRA Research Project
+
+**Mapping Factors Influencing Phosphorus in Manitoba Streams (Lake Winnipeg Watershed)**
+
+*University of Winnipeg - water quality lab*
+
+Phosphorus is essential, but too much in freshwater can contribute to algae blooms and water quality issues. In this project I mapped spatial factors linked to phosphorus loading in Manitoba’s portion of the Lake Winnipeg watershed.
+
+I built a geospatial layer set and grouped it into:
+
+-   **Sources** (wastewater treatment sites, agricultural land, phosphorus contamination risk)
+-   **Transport pathways** (stream networks, waterbodies, drainage features like ditches/culverts)
+-   **Landscape factors** (soil texture/drainage, clay content, erosion risk, wetlands, slope)
+
+The final deliverable is an ArcGIS StoryMap and web map that lets you explore how these potential risk factors overlap across the region.
+
+[**VIEW THE STORYMAP**](https://storymaps.arcgis.com/stories/1cda73ac2b7e4d15a8dac028ebd05219)
+
+------------------------------------------------------------------------
+
+## Early GIS Project - Global Beer Price Map
+
+**University of Winnipeg**
+
+This was the final map from the first GIS course I ever took. The course that introduced me to GIS in the first place. For the final project we could choose any topic as long as it showed what we learned throughout the term. I mapped average beer prices around the world because I want to travel more and I like the occasional beer. After this course, I knew GIS was something I wanted to keep doing and it’s been a big interest of mine ever since!
+
+[**VIEW MAP**](images/first_map_project.png)
+
+------------------------------------------------------------------------
+
+## Managing Wildfire Risk After Mountain Pine Beetle
+
+**University of Winnipeg**
+
+This paper was written for a course during my undergrad, where I researched a topic related to forest health and protection, presented on it, and then wrote this paper. It looks at how wildfire risk changes over time following mountain pine beetle (MPB) outbreaks, and evaluates three management strategies used to reduce that risk: prescribed burning, mechanical thinning, and salvage logging. It draws on two BC case studies, the Mitchell Ridge prescribed burn and Central Chilcotin Rehabilitation Ltd.'s Indigenous-led forest recovery work, to look at how effective each strategy is depending on timing and local conditions.
+
+[**VIEW PAPER**](files/Kopitz_FinalPaper_ForestProtection_UPDATED.pdf)

@@ -1,0 +1,100 @@
+---
+format: 
+  html:
+    toc: true
+    toc-location: left
+---
+
+# Education
+
+**Master of Geomatics for Environmental Management (MGEM)** - 94.7 GPA\
+University of British Columbia\
+*Completed 2026*\
+
+
+**Bachelor of Science (Environmental Science - Specialization in Forest Ecology)**\
+University of Winnipeg\
+*Completed 2025*\
+
+
+---
+
+# Work Experience
+
+
+**Program Assistant - Master of Geomatics for Environmental Management**  
+University of British Columbia  
+*May 2026 - Present*
+
+Assisted the program coordinator with day-to-day administrative and academic tasks. Migrated and updated the program's project page into an interactive spatial platform, and maintained and updated the job board and course platform content for the upcoming cohort. Also supported logistics and coordination for program events and incoming student onboarding.
+
+
+**Environmental Co-op Student - Forestry Branch**  
+Manitoba Hydro  
+*May 2023 - April 2025*
+
+Worked with the utility vegetation management team on a range of GIS, mapping, and data tasks. A large part of my role involved improving and automating workflows, including building an annual vegetation analysis in FME that integrates multiple datasets and produces priority ranking lists across Manitoba. I also created and maintained ArcGIS Online web maps and apps (Field Maps, Experience Builder, Dashboards), supported spatial QA/QC, and helped with field work when needed.
+
+
+**Technical Support Student – Property Department**  
+Manitoba Hydro  
+*May 2022 – April 2023*
+
+Provided GIS and data support within the Property Department. I reviewed and cleaned spatial and tabular datasets, ran analyses in ArcGIS Pro, and supported property-related work. One example was using ArcGIS Pro ModelBuilder to link hydro line spatial data with property information and environmental datasets for tracking and budget estimating automation.
+
+
+**Supervisor / Server / Bartender**  
+Leopold’s Tavern  
+*June 2020 – May 2024*
+
+Worked in a high volume, fast paced restaurant environment while regularly taking on supervisor shifts. In addition to serving and bartending, I coordinated staff during shifts, handled cash management and end of day reporting, and stepped in to resolve issues with guests or team members. The role required staying organized under pressure and balancing multiple responsibilities at once.
+
+
+---
+
+
+# Research Experience
+
+**Undergraduate Student Research Award (USRA) – NSERC**  
+University of Winnipeg  
+*May 2025 – August 2025*
+
+Worked on a GIS and mapping project focused on phosphorus risk factors across Manitoba’s portion of the Lake Winnipeg watershed. I built and organized a set of spatial layers (sources, transport pathways, landscape factors), created maps to compare where these factors overlap, and developed an ArcGIS Online web map and StoryMap to communicate the results. I also assisted with field and lab work supporting other ongoing research projects in the lab.
+
+
+---
+
+
+# Technical Skills
+
+**GIS & Geospatial:**  
+ArcGIS Pro, ArcMap, ArcGIS Online (AGOL), QGIS  
+
+**Coding & Automation:**  
+FME, ArcGIS ModelBuilder, Arcade, R, basic Python and SQL  
+
+**Remote Sensing:**  
+Multispectral imagery, LiDAR data, time series analysis, raster processing 
+
+**Other:**  
+Data quality checks, workflow automation, map creation and design, Microsoft Office  
+
+
+---
+
+
+# Awards & Honors
+
+- **Indigenous Graduate Fellowship (IGF)**, University of British Columbia (2025)  
+- **NSERC Undergraduate Student Research Award (USRA)**, University of Winnipeg (2025)  
+- **University of Winnipeg / Indspire Indigenous Award – Undergraduate** (2023, 2024)
+- **Academic Proficiency Scholarship**, University of Winnipeg (2023)
+- **Dean’s Honour List – Student of Highest Distinction**, University of Winnipeg (2023, 2024)
+- **Dean’s Honour List – Student of Distinction**, University of Winnipeg (2023)
+
+
+---
+
+# Professional Organizations
+
+- Canadian Institute of Forestry (April 2025 – Present)

@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SARAH KOPITZ"
+  navbar:
+    background: light
+    foreground: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: Resume
+      - href: content.qmd
+        text: Projects
+
+format:
+  html:
+    theme: sandstone
+    toc: true
+    include-in-header:
+      text: |
+        <style>
+          hr {
+            border: none !important;
+            height: 8px !important;              /* thickness */
+            background-color: #d9d9d9 !important; /* light gray */
+            
+            margin-top: 40px !important;
+            margin-bottom: 40px !important;
+          }
+        </style>
+
+editor: visual
+
+
+

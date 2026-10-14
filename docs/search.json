@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "I’m Sarah Kopitz, originally from Brandon, Manitoba. I moved to Winnipeg to complete my BSc in Environmental Science, specializing in Forest Ecology, at the University of Winnipeg, and later moved to Vancouver to complete the Master of Geomatics for Environmental Management program at the University of British Columbia.\nI am proudly Anishinaabe and German. Indigenous rights, land, and the respectful representation of knowledge are important to me and shape how I approach environmental work.\nI’m especially interested in GIS, remote sensing, and working with data to better understand environmental issues. Geomatics stands out to me because it combines technical problem solving with creativity, whether I’m building workflows, analyzing information, or communicating results through maps and visuals.\nMy interests are rooted in a strong connection to the environment, especially forests, water, wildlife, and the relationships between people and the land."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome",
+    "section": "",
+    "text": "I’m Sarah Kopitz, originally from Brandon, Manitoba. I moved to Winnipeg to complete my BSc in Environmental Science, specializing in Forest Ecology, at the University of Winnipeg, and later moved to Vancouver to complete the Master of Geomatics for Environmental Management program at the University of British Columbia.\nI am proudly Anishinaabe and German. Indigenous rights, land, and the respectful representation of knowledge are important to me and shape how I approach environmental work.\nI’m especially interested in GIS, remote sensing, and working with data to better understand environmental issues. Geomatics stands out to me because it combines technical problem solving with creativity, whether I’m building workflows, analyzing information, or communicating results through maps and visuals.\nMy interests are rooted in a strong connection to the environment, especially forests, water, wildlife, and the relationships between people and the land."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Education",
+    "section": "",
+    "text": "Education\nMaster of Geomatics for Environmental Management (MGEM) - 94.7 GPA\nUniversity of British Columbia\nCompleted 2026\n\nBachelor of Science (Environmental Science - Specialization in Forest Ecology)\nUniversity of Winnipeg\nCompleted 2025\n\n\n\n\nWork Experience\nProgram Assistant - Master of Geomatics for Environmental Management\nUniversity of British Columbia\nMay 2026 - Present\nAssisted the program coordinator with day-to-day administrative and academic tasks. Migrated and updated the program’s project page into an interactive spatial platform, and maintained and updated the job board and course platform content for the upcoming cohort. Also supported logistics and coordination for program events and incoming student onboarding.\nEnvironmental Co-op Student - Forestry Branch\nManitoba Hydro\nMay 2023 - April 2025\nWorked with the utility vegetation management team on a range of GIS, mapping, and data tasks. A large part of my role involved improving and automating workflows, including building an annual vegetation analysis in FME that integrates multiple datasets and produces priority ranking lists across Manitoba. I also created and maintained ArcGIS Online web maps and apps (Field Maps, Experience Builder, Dashboards), supported spatial QA/QC, and helped with field work when needed.\nTechnical Support Student – Property Department\nManitoba Hydro\nMay 2022 – April 2023\nProvided GIS and data support within the Property Department. I reviewed and cleaned spatial and tabular datasets, ran analyses in ArcGIS Pro, and supported property-related work. One example was using ArcGIS Pro ModelBuilder to link hydro line spatial data with property information and environmental datasets for tracking and budget estimating automation.\nSupervisor / Server / Bartender\nLeopold’s Tavern\nJune 2020 – May 2024\nWorked in a high volume, fast paced restaurant environment while regularly taking on supervisor shifts. In addition to serving and bartending, I coordinated staff during shifts, handled cash management and end of day reporting, and stepped in to resolve issues with guests or team members. The role required staying organized under pressure and balancing multiple responsibilities at once.\n\n\n\nResearch Experience\nUndergraduate Student Research Award (USRA) – NSERC\nUniversity of Winnipeg\nMay 2025 – August 2025\nWorked on a GIS and mapping project focused on phosphorus risk factors across Manitoba’s portion of the Lake Winnipeg watershed. I built and organized a set of spatial layers (sources, transport pathways, landscape factors), created maps to compare where these factors overlap, and developed an ArcGIS Online web map and StoryMap to communicate the results. I also assisted with field and lab work supporting other ongoing research projects in the lab.\n\n\n\nTechnical Skills\nGIS & Geospatial:\nArcGIS Pro, ArcMap, ArcGIS Online (AGOL), QGIS\nCoding & Automation:\nFME, ArcGIS ModelBuilder, Arcade, R, basic Python and SQL\nRemote Sensing:\nMultispectral imagery, LiDAR data, time series analysis, raster processing\nOther:\nData quality checks, workflow automation, map creation and design, Microsoft Office\n\n\n\nAwards & Honors\n\nIndigenous Graduate Fellowship (IGF), University of British Columbia (2025)\n\nNSERC Undergraduate Student Research Award (USRA), University of Winnipeg (2025)\n\nUniversity of Winnipeg / Indspire Indigenous Award – Undergraduate (2023, 2024)\nAcademic Proficiency Scholarship, University of Winnipeg (2023)\nDean’s Honour List – Student of Highest Distinction, University of Winnipeg (2023, 2024)\nDean’s Honour List – Student of Distinction, University of Winnipeg (2023)\n\n\n\n\nProfessional Organizations\n\nCanadian Institute of Forestry (April 2025 – Present)"
+  },
+  {
+    "objectID": "content.html",
+    "href": "content.html",
+    "title": "MGEM",
+    "section": "",
+    "text": "University of British Columbia, MGEM Capstone (doi link)\nThis capstone examined vegetation recovery following a 2013 wildfire complex that burned about 168,837 hectares in the Boreal Shield of northern Manitoba, near Gillam and nearby First Nations and Northern Affairs communities. Using Landsat surface reflectance imagery from 2010 to 2023, I looked at how burn severity and pre-fire land cover influenced recovery patterns over the first decade after the fire.\nWhat I did\n\nBuilt annual vegetation index time series from Landsat imagery\nMapped burn severity using a pre-fire and post-fire satellite comparison\nCalculated recovery rate and estimated years to recovery\nCompared recovery across burn severity classes and pre-fire land-cover types\nCreated maps, graphs, and summary figures to communicate the results\n\nVIEW R CODE AND PROJECT CONTENT\nVIEW PAPER\n\n\n\n\nDuck Mountain, Manitoba\nThis was a two page proposal completed in a landscape ecology and management course. I outlined a landscape question and analysis plan and chose to use landscape metrics to describe how patterns could be measured.\nThe proposal examines how industrial logging patterns have changed over time in Forest Management License 3 (Duck Mountain, Manitoba) using Landsat based disturbance data (NTEMS).\nWhat I proposed\n\nUse NTEMS harvest disturbance data (1994–2022)\nReclass harvest-year layers into logged / not logged maps\nApply landscape metrics (PLAND, NP, AREA_MN/SD, CLUMPY)\nEvaluate changes in patch number, patch size, and clustering\nInterpret implications for landscape pattern and forest management\n\nVIEW PROPOSAL\n\n\n\n\nAlex Fraser Research Forest, British Columbia\nThis project focused on developing a suite of forest structural products from airborne LiDAR data. The goal was to move from raw point cloud data to forest metrics and mapped predictions across the study area.\nWhat I did\n\nBuilt a digital elevation model (DEM) and canopy height model (CHM) mosaic from LiDAR data\nModeled dominant height and above-ground biomass (AGB) using LiDAR metrics\nApplied the models wall-to-wall to produce continuous prediction surfaces across the study area\n\nVIEW R CODE\n\n\n\n\nMalcolm Knapp Research Forest, British Columbia\nThis project focused on detecting and segmenting individual trees from LiDAR data using two different approaches.\nWhat I did\n\nPrepared and normalized LiDAR data for tree-level analysis\nSegmented trees using Li et al. (2012) point-cloud method and Dalponte & Coomes (2016) Canopy Height Model(CHM) - based method\n\nVIEW R CODE\n\n\n\n\n3D visualization of Dalponte (2016) individual tree segmentation at 0.5 m CHM resolution.\n\n\n\n\n\n\nNahmint Watershed, British Columbia\nThis project focused on defining Riparian Management Areas (RMAs) within a topographically complex watershed using a Digital Elevation Model (DEM) and hydrological tools.\nWhat I did\n\nProcessed a DEM to remove sinks and model flow direction and accumulation\n\nExtracted and classified stream networks using Strahler and Shreve ordering\n\nCalculated stream gradient and width to determine fish-bearing potential\n\nAssigned stream classes and applied reserve and management zone buffers using python field calculations\n\nDelineated watersheds and generated contour lines\n\nProduced a final map summarizing riparian management areas, stream networks, and terrain\n\nVIEW FINAL MAP\n\n\n\n\nCentral British Columbia\nThis team based final project for a Python course focused on analyzing forest harvest cutblocks using spatial data processing and visualization techniques. The objective was to explore temporal and spatial harvest patterns and document the workflow in a reproducible notebook format.\nWhat we did\n\nPrepared and cleaned spatial datasets\n\nAnalyzed harvest patterns over time\n\nProduced maps and summary visualizations\n\nOrganized and documented the final notebook workflow\n\nVIEW NOTEBOOK"
+  },
+  {
+    "objectID": "content.html#capstone---post-fire-spectral-recovery-in-northern-manitoba",
+    "href": "content.html#capstone---post-fire-spectral-recovery-in-northern-manitoba",
+    "title": "MGEM",
+    "section": "",
+    "text": "University of British Columbia, MGEM Capstone (doi link)\nThis capstone examined vegetation recovery following a 2013 wildfire complex that burned about 168,837 hectares in the Boreal Shield of northern Manitoba, near Gillam and nearby First Nations and Northern Affairs communities. Using Landsat surface reflectance imagery from 2010 to 2023, I looked at how burn severity and pre-fire land cover influenced recovery patterns over the first decade after the fire.\nWhat I did\n\nBuilt annual vegetation index time series from Landsat imagery\nMapped burn severity using a pre-fire and post-fire satellite comparison\nCalculated recovery rate and estimated years to recovery\nCompared recovery across burn severity classes and pre-fire land-cover types\nCreated maps, graphs, and summary figures to communicate the results\n\nVIEW R CODE AND PROJECT CONTENT\nVIEW PAPER"
+  },
+  {
+    "objectID": "content.html#logging-change-proposal",
+    "href": "content.html#logging-change-proposal",
+    "title": "MGEM",
+    "section": "",
+    "text": "Duck Mountain, Manitoba\nThis was a two page proposal completed in a landscape ecology and management course. I outlined a landscape question and analysis plan and chose to use landscape metrics to describe how patterns could be measured.\nThe proposal examines how industrial logging patterns have changed over time in Forest Management License 3 (Duck Mountain, Manitoba) using Landsat based disturbance data (NTEMS).\nWhat I proposed\n\nUse NTEMS harvest disturbance data (1994–2022)\nReclass harvest-year layers into logged / not logged maps\nApply landscape metrics (PLAND, NP, AREA_MN/SD, CLUMPY)\nEvaluate changes in patch number, patch size, and clustering\nInterpret implications for landscape pattern and forest management\n\nVIEW PROPOSAL"
+  },
+  {
+    "objectID": "content.html#lidar-forest-modeling",
+    "href": "content.html#lidar-forest-modeling",
+    "title": "MGEM",
+    "section": "",
+    "text": "Alex Fraser Research Forest, British Columbia\nThis project focused on developing a suite of forest structural products from airborne LiDAR data. The goal was to move from raw point cloud data to forest metrics and mapped predictions across the study area.\nWhat I did\n\nBuilt a digital elevation model (DEM) and canopy height model (CHM) mosaic from LiDAR data\nModeled dominant height and above-ground biomass (AGB) using LiDAR metrics\nApplied the models wall-to-wall to produce continuous prediction surfaces across the study area\n\nVIEW R CODE"
+  },
+  {
+    "objectID": "content.html#individual-tree-segmentation",
+    "href": "content.html#individual-tree-segmentation",
+    "title": "MGEM",
+    "section": "",
+    "text": "Malcolm Knapp Research Forest, British Columbia\nThis project focused on detecting and segmenting individual trees from LiDAR data using two different approaches.\nWhat I did\n\nPrepared and normalized LiDAR data for tree-level analysis\nSegmented trees using Li et al. (2012) point-cloud method and Dalponte & Coomes (2016) Canopy Height Model(CHM) - based method\n\nVIEW R CODE\n\n\n\n\n3D visualization of Dalponte (2016) individual tree segmentation at 0.5 m CHM resolution."
+  },
+  {
+    "objectID": "content.html#stream-riparian-analysis",
+    "href": "content.html#stream-riparian-analysis",
+    "title": "MGEM",
+    "section": "",
+    "text": "Nahmint Watershed, British Columbia\nThis project focused on defining Riparian Management Areas (RMAs) within a topographically complex watershed using a Digital Elevation Model (DEM) and hydrological tools.\nWhat I did\n\nProcessed a DEM to remove sinks and model flow direction and accumulation\n\nExtracted and classified stream networks using Strahler and Shreve ordering\n\nCalculated stream gradient and width to determine fish-bearing potential\n\nAssigned stream classes and applied reserve and management zone buffers using python field calculations\n\nDelineated watersheds and generated contour lines\n\nProduced a final map summarizing riparian management areas, stream networks, and terrain\n\nVIEW FINAL MAP"
+  },
+  {
+    "objectID": "content.html#forest-cutblock-analysis---python",
+    "href": "content.html#forest-cutblock-analysis---python",
+    "title": "MGEM",
+    "section": "",
+    "text": "Central British Columbia\nThis team based final project for a Python course focused on analyzing forest harvest cutblocks using spatial data processing and visualization techniques. The objective was to explore temporal and spatial harvest patterns and document the workflow in a reproducible notebook format.\nWhat we did\n\nPrepared and cleaned spatial datasets\n\nAnalyzed harvest patterns over time\n\nProduced maps and summary visualizations\n\nOrganized and documented the final notebook workflow\n\nVIEW NOTEBOOK"
+  },
+  {
+    "objectID": "content.html#nserc-usra-research-project",
+    "href": "content.html#nserc-usra-research-project",
+    "title": "MGEM",
+    "section": "NSERC USRA Research Project",
+    "text": "NSERC USRA Research Project\nMapping Factors Influencing Phosphorus in Manitoba Streams (Lake Winnipeg Watershed)\nUniversity of Winnipeg - water quality lab\nPhosphorus is essential, but too much in freshwater can contribute to algae blooms and water quality issues. In this project I mapped spatial factors linked to phosphorus loading in Manitoba’s portion of the Lake Winnipeg watershed.\nI built a geospatial layer set and grouped it into:\n\nSources (wastewater treatment sites, agricultural land, phosphorus contamination risk)\nTransport pathways (stream networks, waterbodies, drainage features like ditches/culverts)\nLandscape factors (soil texture/drainage, clay content, erosion risk, wetlands, slope)\n\nThe final deliverable is an ArcGIS StoryMap and web map that lets you explore how these potential risk factors overlap across the region.\nVIEW THE STORYMAP"
+  },
+  {
+    "objectID": "content.html#early-gis-project---global-beer-price-map",
+    "href": "content.html#early-gis-project---global-beer-price-map",
+    "title": "MGEM",
+    "section": "Early GIS Project - Global Beer Price Map",
+    "text": "Early GIS Project - Global Beer Price Map\nUniversity of Winnipeg\nThis was the final map from the first GIS course I ever took. The course that introduced me to GIS in the first place. For the final project we could choose any topic as long as it showed what we learned throughout the term. I mapped average beer prices around the world because I want to travel more and I like the occasional beer. After this course, I knew GIS was something I wanted to keep doing and it’s been a big interest of mine ever since!\nVIEW MAP"
+  },
+  {
+    "objectID": "content.html#managing-wildfire-risk-after-mountain-pine-beetle",
+    "href": "content.html#managing-wildfire-risk-after-mountain-pine-beetle",
+    "title": "MGEM",
+    "section": "Managing Wildfire Risk After Mountain Pine Beetle",
+    "text": "Managing Wildfire Risk After Mountain Pine Beetle\nUniversity of Winnipeg\nThis paper was written for a course during my undergrad, where I researched a topic related to forest health and protection, presented on it, and then wrote this paper. It looks at how wildfire risk changes over time following mountain pine beetle (MPB) outbreaks, and evaluates three management strategies used to reduce that risk: prescribed burning, mechanical thinning, and salvage logging. It draws on two BC case studies, the Mitchell Ridge prescribed burn and Central Chilcotin Rehabilitation Ltd.’s Indigenous-led forest recovery work, to look at how effective each strategy is depending on timing and local conditions.\nVIEW PAPER"
+  }
+]
